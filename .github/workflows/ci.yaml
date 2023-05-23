@@ -7,7 +7,7 @@ on:
 jobs:
   check-dispatch:
     runs-on: ubuntu-latest
-    if: ${{ (github.event_name == 'workflow_dispatch') }}
+    if: ${{ (false) || (github.event_name == 'workflow_dispatch') }}
     steps:
       - run: echo "dispach"
 
